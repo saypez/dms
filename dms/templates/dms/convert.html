@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DMS convertor server webpage</title>
+
+<meta charset=”utf-8” />
+<meta name="keywords" content="HTML,CSS">
+<link rel='stylesheet' href='/static/css/bootstrap.min.css' type='text/css'/>
+
+</head>
+</head>
+
+<body style="background-color: #d0e4fe">
+
+<h1 style="color:blue; text-align:center"><b>DMS Converter</b></h1>
+
+<div style="width: 1300px; padding:10px; border:2px solid navy; margin: 30px;">
+<form class="form-inline">
+
+	<div style="width: 1200px; padding:25px; border:5px solid navy; margin: 30px;">
+  		
+		<div class="form-group">
+    			<label for="InputFile"><b>Select a track<b></label>   
+    			<input type="file" id="InputFile">
+  		</div>
+ 
+		<div class="form-group">
+                	<label for="ArtistName">Who is the artist</label>
+			<select id="ArtistName">
+				<option value="Alireza-Ghorbani">Alireza Ghorbani</option>
+				<option value="Shahram-Nazeri">Shahram Nazeri</option>
+				<option value="Shajarian">Mohammad-Reza Shajarian </option>
+				<option value="Maziar-Fallahi">Maziar Fallahi</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+    			<label for="MetaFile">Select Metadata file</label>   
+    			<input type="file" id="MetaFile">
+  		</div>
+
+	</div>
+</form>
+
+
+<form class="form-inline">
+
+        <div style="width: 1200px; padding:25px; border:5px solid navy; margin: 30px;">
+                
+                <div class="form-group">
+                        <label for="InputFile"><b>Select an album<b></label>   
+                        <input type="file" id="InputFile">
+                </div>
+ 
+                <div class="form-group">
+                        <label for="ArtistName">Who is the artist</label>
+                        <select id="ArtistName">
+                                <option value="Alireza-Ghorbani">Alireza Ghorbani</option>
+                                <option value="Shahram-Nazeri">Shahram Nazeri</option>
+                                <option value="Shajarian">Mohammad-Reza Shajarian </option>
+                                <option value="Maziar-Fallahi">Maziar Fallahi</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                        <label for="MetaFile">Select Metadata file</label>   
+                        <input type="file" id="MetaFile">
+                </div>
+
+        </div>
+</form>
+</div>
+
+<div style="width: 1300px; padding:10px; border:2px solid navy; margin: 30px;">
+<!--form class="form-inline"> -->
+
+        <!--<div style="width: 1200px; padding:25px; border:5px solid navy; margin: 30px;">  -->
+                
+		<div class="radio">
+        		<label>
+    				<input type="radio" name="rate" id="rate1" value="64K" checked>
+					64 kbit/s
+	  		</label>
+		</div>
+
+		<div class="radio">
+  			<label>
+    				<input type="radio" name="rate" id="rate2" value="128K">
+    					128 kbit/s
+	  		</label>
+		</div>
+
+		<div class="radio disabled">
+			<label>
+    				<input type="radio" name="rate" id="rate3" value="320k">
+    					320 kbit/s
+	  		</label>
+		</div>
+        <!--</div> -->
+<!--</form> -->
+</div>
+
+
+ 
+<br>
+  
+<div style="text-align:center">
+<button type="submit" class="btn btn-primary btn-lg">Convert</button>
+</div>
+
+
+</body>
+</html>
+
+
