@@ -1,2 +1,2 @@
 # dms
-dms convertor server
+dms converter server
